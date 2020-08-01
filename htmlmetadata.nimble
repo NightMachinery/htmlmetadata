@@ -2,10 +2,10 @@
 
 version       = "0.1.0"
 author        = "NightMachinary"
-description   = "Fetches metadata of URLs and formats them in markdown, org, html, etc."
+description   = "Extracts metadata out of HTML."
 license       = "MIT"
 srcDir        = "src"
-bin           = @["urltonote"]
+bin           = @["htmlmetadata"]
 
 
 
