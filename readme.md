@@ -1,6 +1,6 @@
 # About
 
-`htmlmetadata` is a CLI app that extracts metadata out of HTML. Extremely fast (written in `nim`), but might not handle edge cases.
+`htmlmetadata` is a CLI app that extracts metadata out of HTML. Extremely fast (written in `Nim`), but might not handle edge cases.
 
 I use this tool often, so you can be sure that it's maintained (i.e., working), even if it has not had recent activity.
 
