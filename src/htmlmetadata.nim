@@ -26,7 +26,6 @@ import sequtils
 
 let dbg = (getEnv("DEBUGME", "") != "")
 
-# We rely on this order in our scripts don't change it.
 type metadata = object
   title: string
   description: string
@@ -143,8 +142,13 @@ when isMainModule:
     # for rec in md.fields:
       # stdout.write(rec & $'\x00')
   else:
-    for arg in args:
-      stdout.write(md[$arg, string] & "\0")
+    var sep = "\0"
+    for i, arg in args:
+      if i == (args.len-1):
+        sep = ""
+      # if dbg:
+      #   stderr.writeLine(arg & ":" & $i)
+      stdout.write(md[$arg, string] & sep)
 
 
 
