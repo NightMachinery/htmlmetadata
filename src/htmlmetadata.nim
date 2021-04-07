@@ -144,7 +144,8 @@ when isMainModule:
   else:
     var sep = "\0"
     for i, arg in args:
-      if i == (args.len-1):
+      if i == (args.len - 1):
+        # stdout.write("last arg")
         sep = ""
       # if dbg:
       #   stderr.writeLine(arg & ":" & $i)
